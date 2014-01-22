@@ -7,12 +7,12 @@ except ImportError:
 
 setup(
     name='current',
-    version='0.1',
+    version='0.2',
     author='Sebastian Bank',
     author_email='sebastian.bank@uni-leipzig.de',
     description='Current module relative paths and imports',
     license='CC0',
-    keywords='sys.path import inspect',
+    keywords='sys.path import temporary inspect caller',
     url='http://github.com/xflr6/current',
     py_modules=['current'],
     platforms='any',
