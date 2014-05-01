@@ -1,5 +1,10 @@
 # current.py - change sys.path for imports relative to the current module
 
+__title__ = 'current'
+__version__ = '0.2.1'
+__author__ = 'Sebastian Bank <sebastian.bank@uni-leipzig.de>'
+__license__ = 'CC0'
+
 import os
 import sys
 import inspect
@@ -47,7 +52,7 @@ def caller_path(steps=1, names=None):
     """Return the path to the file of the current frames' caller."""
     frame = inspect.currentframe()
 
-    for i in range(steps):
+    for i in range(steps + 1):
         frame = frame.f_back
 
     path = os.path.dirname(frame.f_code.co_filename)

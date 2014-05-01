@@ -1,4 +1,4 @@
-*.py[cod]
+*.py[co]
 MANIFEST
 dist/
 *.egg-info/

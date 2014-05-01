@@ -45,6 +45,17 @@ Get paths relative to the module of the callers of the current code:
     >>> callercaller = current.caller_path(steps=2)
 
 
+Potential issues
+----------------
+
+This package uses ``sys._getframe`` (which is almost the same as
+``inspect.currentframe``, see__ docs__). Under IronPython this might require
+enabling the ``FullFrames`` option of the interpreter.
+
+.. __: http://docs.python.org/2/library/sys.html#sys._getframe
+.. __: http://docs.python.org/2/library/inspect.html#inspect.currentframe
+
+
 License
 -------
 
@@ -55,6 +66,8 @@ License
 
 Changelog
 ---------
+
+Version 0.2.1: Fixed caller_path. Documented sys._getframe dependency.
 
 Version 0.2: Added caller_path.
 
