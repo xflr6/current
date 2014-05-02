@@ -11,6 +11,8 @@ Get the path of a file relative to the module of the current caller.
 Installation
 ------------
 
+This package runs under Python 2.7 and 3.3+, use pip_ to install:
+
 .. code:: bash
 
     $ pip install current
@@ -67,11 +69,16 @@ License
 Changelog
 ---------
 
+Version 0.3: Added Python 3.3+ support.
+
 Version 0.2.1: Fixed caller_path. Documented sys._getframe dependency.
 
 Version 0.2: Added caller_path.
 
 Version 0.1: First public release.
+
+
+.. _pip: http://pip.readthedocs.org
 
 
 .. |PyPI version| image:: https://pypip.in/v/current/badge.png
