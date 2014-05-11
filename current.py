@@ -1,7 +1,7 @@
 # current.py - change sys.path for imports relative to the current module
 
 __title__ = 'current'
-__version__ = '0.3'
+__version__ = '0.3.1'
 __author__ = 'Sebastian Bank <sebastian.bank@uni-leipzig.de>'
 __license__ = 'CC0'
 

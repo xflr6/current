@@ -1,7 +1,7 @@
 Current
 =======
 
-|PyPI version| |License| |Downloads|
+|PyPI version| |License| |Wheel| |Downloads|
 
 Get the path of a file relative to the current module. Import a Python module
 relative to the current module. Temporarily change ``sys.path`` for imports.
@@ -69,6 +69,8 @@ License
 Changelog
 ---------
 
+Version 0.3.1: Added wheel.
+
 Version 0.3: Added Python 3.3+ support.
 
 Version 0.2.1: Fixed caller_path. Documented sys._getframe dependency.
@@ -81,12 +83,15 @@ Version 0.1: First public release.
 .. _pip: http://pip.readthedocs.org
 
 
-.. |PyPI version| image:: https://pypip.in/v/current/badge.png
+.. |PyPI version| image:: https://pypip.in/v/current/badge.svg
     :target: https://pypi.python.org/pypi/current
     :alt: Latest PyPI Version
-.. |License| image:: https://pypip.in/license/current/badge.png
+.. |License| image:: https://pypip.in/license/current/badge.svg
     :target: https://pypi.python.org/pypi/current
     :alt: License
-.. |Downloads| image:: https://pypip.in/d/current/badge.png
+.. |Wheel| image:: https://pypip.in/wheel/current/badge.svg
+    :target: https://pypi.python.org/pypi/current
+    :alt: Wheel Status
+.. |Downloads| image:: https://pypip.in/d/current/badge.svg
     :target: https://pypi.python.org/pypi/current
     :alt: Downloads
