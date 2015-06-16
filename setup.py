@@ -4,7 +4,7 @@ from setuptools import setup
 
 setup(
     name='current',
-    version='0.3.1',
+    version='0.3.2.dev0',
     author='Sebastian Bank',
     author_email='sebastian.bank@uni-leipzig.de',
     description='Current module relative paths and imports',
@@ -13,13 +13,13 @@ setup(
     url='http://github.com/xflr6/current',
     py_modules=['current'],
     extras_require={
+        'test': ['nose', 'coverage', 'flake8', 'pep8-naming'],
         'dev': ['wheel'],
-        'test': ['nose'],
     },
     platforms='any',
     long_description=open('README.rst').read(),
     classifiers=[
-        'Development Status :: 3 - Alpha',
+        'Development Status :: 4 - Beta',
         'Environment :: Console',
         'Intended Audience :: Developers',
         'License :: CC0 1.0 Universal (CC0 1.0) Public Domain Dedication',

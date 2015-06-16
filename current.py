@@ -1,7 +1,7 @@
 # current.py - change sys.path for imports relative to the current module
 
 __title__ = 'current'
-__version__ = '0.3.1'
+__version__ = '0.3.2-dev'
 __author__ = 'Sebastian Bank <sebastian.bank@uni-leipzig.de>'
 __license__ = 'CC0'
 
@@ -54,7 +54,6 @@ def inserted_path(directory=os.pardir, index=1):
 
 def caller_path(steps=1, names=None):
     """Return the path to the file of the current frames' caller."""
-
     frame = sys._getframe(steps + 1)
 
     try:

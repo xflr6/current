@@ -1,11 +1,20 @@
 Current
 =======
 
-|PyPI version| |License| |Wheel| |Downloads|
+|PyPI version| |License| |Supported Python| |Format| |Downloads|
 
 Get the path of a file relative to the current module. Import a Python module
 relative to the current module. Temporarily change ``sys.path`` for imports.
 Get the path of a file relative to the module of the current caller.
+
+
+Links
+-----
+
+- GitHub: http://github.com/xflr6/current
+- PyPI: http://pypi.python.org/pypi/current
+- Download: http://pypi.python.org/pypi/current#downloads
+- Issue Tracker: http://github.com/xflr6/current/issues
 
 
 Installation
@@ -16,6 +25,7 @@ This package runs under Python 2.7 and 3.3+, use pip_ to install:
 .. code:: bash
 
     $ pip install current
+
 
 Usage
 -----
@@ -69,6 +79,8 @@ License
 Changelog
 ---------
 
+Version 0.3.2 (in development): 
+
 Version 0.3.1: Added wheel.
 
 Version 0.3: Added Python 3.3+ support.
@@ -83,15 +95,18 @@ Version 0.1: First public release.
 .. _pip: http://pip.readthedocs.org
 
 
-.. |PyPI version| image:: https://pypip.in/v/current/badge.svg
+.. |PyPI version| image:: https://img.shields.io/pypi/v/current.svg
     :target: https://pypi.python.org/pypi/current
     :alt: Latest PyPI Version
-.. |License| image:: https://pypip.in/license/current/badge.svg
+.. |License| image:: https://img.shields.io/pypi/l/current.svg
     :target: https://pypi.python.org/pypi/current
     :alt: License
-.. |Wheel| image:: https://pypip.in/wheel/current/badge.svg
+.. |Supported Python| image:: https://img.shields.io/pypi/pyversions/current.svg
     :target: https://pypi.python.org/pypi/current
-    :alt: Wheel Status
-.. |Downloads| image:: https://pypip.in/d/current/badge.svg
+    :alt: Supported Python Versions
+.. |Format| image:: https://img.shields.io/pypi/format/current.svg
+    :target: https://pypi.python.org/pypi/current
+    :alt: Format
+.. |Downloads| image:: https://img.shields.io/pypi/dm/current.svg
     :target: https://pypi.python.org/pypi/current
     :alt: Downloads
