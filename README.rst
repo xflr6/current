@@ -13,8 +13,8 @@ Links
 
 - GitHub: http://github.com/xflr6/current
 - PyPI: http://pypi.python.org/pypi/current
-- Download: http://pypi.python.org/pypi/current#downloads
 - Issue Tracker: http://github.com/xflr6/current/issues
+- Download: http://pypi.python.org/pypi/current#downloads
 
 
 Installation
@@ -61,19 +61,14 @@ Potential issues
 ----------------
 
 This package uses ``sys._getframe`` (which is almost the same as
-``inspect.currentframe``, see__ docs__). Under IronPython this might require
+``inspect.currentframe``, see_ docs_). Under IronPython this might require
 enabling the ``FullFrames`` option of the interpreter.
-
-.. __: http://docs.python.org/2/library/sys.html#sys._getframe
-.. __: http://docs.python.org/2/library/inspect.html#inspect.currentframe
 
 
 License
 -------
 
-`CC0 1.0 Public Domain Dedication`__
-
-.. __: http://creativecommons.org/publicdomain/zero/1.0/
+`CC0 1.0 Public Domain Dedication`_
 
 
 Changelog
@@ -94,6 +89,10 @@ Version 0.1: First public release.
 
 .. _pip: http://pip.readthedocs.org
 
+.. _see: http://docs.python.org/2/library/sys.html#sys._getframe
+.. _docs: http://docs.python.org/2/library/inspect.html#inspect.currentframe
+
+.. _CC0 1.0 Public Domain Dedication: http://creativecommons.org/publicdomain/zero/1.0/
 
 .. |PyPI version| image:: https://img.shields.io/pypi/v/current.svg
     :target: https://pypi.python.org/pypi/current
