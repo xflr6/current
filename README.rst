@@ -87,7 +87,7 @@ Version 0.2: Added caller_path.
 Version 0.1: First public release.
 
 
-.. _pip: http://pip.readthedocs.org
+.. _pip: http://pip.readthedocs.io
 
 .. _see: http://docs.python.org/2/library/sys.html#sys._getframe
 .. _docs: http://docs.python.org/2/library/inspect.html#inspect.currentframe
