@@ -1,15 +1,15 @@
 # current.py - change sys.path for imports relative to the current module
 
-__title__ = 'current'
-__version__ = '0.3.2.dev0'
-__author__ = 'Sebastian Bank <sebastian.bank@uni-leipzig.de>'
-__license__ = 'CC0'
-
 import os
 import sys
 import contextlib
 
 __all__ = ['current_path', 'inserted_path', 'caller_path']
+
+__title__ = 'current'
+__version__ = '0.3.2.dev0'
+__author__ = 'Sebastian Bank <sebastian.bank@uni-leipzig.de>'
+__license__ = 'CC0'
 
 
 def current_path(*names):
@@ -31,7 +31,7 @@ def current_path(*names):
 
 @contextlib.contextmanager
 def inserted_path(directory=os.pardir, index=1):
-    """Temporarily insert directory (os.pardir) to sys.path at index (1)"""
+    """Temporarily insert directory (os.pardir) to sys.path at index (1)."""
     depth = 1 if __name__ == '__main__' else 2
 
     frame = sys._getframe(depth)
