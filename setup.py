@@ -16,7 +16,6 @@ setup(
     long_description=open('README.rst').read(),
     classifiers=[
         'Development Status :: 4 - Beta',
-        'Environment :: Console',
         'Intended Audience :: Developers',
         'License :: CC0 1.0 Universal (CC0 1.0) Public Domain Dedication',
         'Operating System :: OS Independent',
