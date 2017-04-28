@@ -1,7 +1,7 @@
 Current
 =======
 
-|PyPI version| |License| |Supported Python| |Format| |Downloads|
+|PyPI version| |License| |Supported Python| |Format|
 
 Get the path of a file relative to the current module. Import a Python module
 relative to the current module. Temporarily change ``sys.path`` for imports.
@@ -11,10 +11,10 @@ Get the path of a file relative to the module of the current caller.
 Links
 -----
 
-- GitHub: http://github.com/xflr6/current
-- PyPI: http://pypi.python.org/pypi/current
-- Issue Tracker: http://github.com/xflr6/current/issues
-- Download: http://pypi.python.org/pypi/current#downloads
+- GitHub: https://github.com/xflr6/current
+- PyPI: https://pypi.python.org/pypi/current
+- Issue Tracker: https://github.com/xflr6/current/issues
+- Download: https://pypi.python.org/pypi/current#downloads
 
 
 Installation
@@ -87,12 +87,12 @@ Version 0.2: Added caller_path.
 Version 0.1: First public release.
 
 
-.. _pip: http://pip.readthedocs.io
+.. _pip: https://pip.readthedocs.io
 
-.. _see: http://docs.python.org/2/library/sys.html#sys._getframe
-.. _docs: http://docs.python.org/2/library/inspect.html#inspect.currentframe
+.. _see: https://docs.python.org/2/library/sys.html#sys._getframe
+.. _docs: https://docs.python.org/2/library/inspect.html#inspect.currentframe
 
-.. _CC0 1.0 Public Domain Dedication: http://creativecommons.org/publicdomain/zero/1.0/
+.. _CC0 1.0 Public Domain Dedication: https://creativecommons.org/publicdomain/zero/1.0/
 
 .. |PyPI version| image:: https://img.shields.io/pypi/v/current.svg
     :target: https://pypi.python.org/pypi/current
