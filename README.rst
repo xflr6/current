@@ -74,7 +74,8 @@ License
 Changelog
 ---------
 
-Version 0.3.2 (in development): 
+Version 0.3.2 Port tests from nose/unittest to pytest.
+              Update meta data, tag Python 3.5/3.6 support.
 
 Version 0.3.1: Added wheel.
 
