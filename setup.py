@@ -1,5 +1,6 @@
 # setup.py
 
+import io
 from setuptools import setup
 
 setup(
@@ -18,7 +19,7 @@ setup(
         'dev': ['flake8', 'pep8-naming', 'wheel', 'twine'],
         'test': ['pytest>=3.3', 'pytest-cov'],
     },
-    long_description=open('README.rst').read(),
+    long_description=io.open('README.rst', encoding='utf-8').read(),
     classifiers=[
         'Development Status :: 4 - Beta',
         'Intended Audience :: Developers',
@@ -30,6 +31,5 @@ setup(
         'Programming Language :: Python :: 3.4',
         'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: 3.6',
-        'Topic :: Software Development :: Libraries :: Python Modules',
     ],
 )
