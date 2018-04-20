@@ -12,9 +12,9 @@ Links
 -----
 
 - GitHub: https://github.com/xflr6/current
-- PyPI: https://pypi.python.org/pypi/current
+- PyPI: https://pypi.org/project/current/
 - Issue Tracker: https://github.com/xflr6/current/issues
-- Download: https://pypi.python.org/pypi/current#downloads
+- Download: https://pypi.org/project/current/#files
 
 
 Installation
@@ -97,17 +97,14 @@ Version 0.1: First public release.
 .. _CC0 1.0 Public Domain Dedication: https://creativecommons.org/publicdomain/zero/1.0/
 
 .. |PyPI version| image:: https://img.shields.io/pypi/v/current.svg
-    :target: https://pypi.python.org/pypi/current
+    :target: https://pypi.org/project/current/
     :alt: Latest PyPI Version
 .. |License| image:: https://img.shields.io/pypi/l/current.svg
-    :target: https://pypi.python.org/pypi/current
+    :target: https://pypi.org/project/current/
     :alt: License
 .. |Supported Python| image:: https://img.shields.io/pypi/pyversions/current.svg
-    :target: https://pypi.python.org/pypi/current
+    :target: https://pypi.org/project/current/
     :alt: Supported Python Versions
 .. |Format| image:: https://img.shields.io/pypi/format/current.svg
-    :target: https://pypi.python.org/pypi/current
+    :target: https://pypi.org/project/current/
     :alt: Format
-.. |Downloads| image:: https://img.shields.io/pypi/dm/current.svg
-    :target: https://pypi.python.org/pypi/current
-    :alt: Downloads
