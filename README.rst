@@ -74,6 +74,8 @@ License
 Changelog
 ---------
 
+Version 0.3.4 (in development): 
+
 Version 0.3.3: Drop Python 3.3 support. Add python_requires.
 
 Version 0.3.2: Port tests from nose/unittest to pytest. Update meta data, tag Python 3.5/3.6 support.
