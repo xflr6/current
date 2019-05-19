@@ -20,7 +20,7 @@ Links
 Installation
 ------------
 
-This package runs under Python 2.7 and 3.4+, use pip_ to install:
+This package runs under Python 2.7 and 3.5+, use pip_ to install:
 
 .. code:: bash
 
@@ -74,7 +74,7 @@ License
 Changelog
 ---------
 
-Version 0.3.5 (in development): 
+Version 0.3.5 (in development): Drop Python 3.4 support.
 
 Version 0.3.4: Tag Python 3.7 support.
 
