@@ -74,7 +74,7 @@ License
 Changelog
 ---------
 
-Version 0.3.5 (in development): Drop Python 3.4 support.
+Version 0.3.5: Drop Python 3.4 support.
 
 Version 0.3.4: Tag Python 3.7 support.
 
