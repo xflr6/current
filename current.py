@@ -7,7 +7,7 @@ import contextlib
 __all__ = ['current_path', 'inserted_path', 'caller_path']
 
 __title__ = 'current'
-__version__ = '0.3.5'
+__version__ = '0.3.6.dev0'
 __author__ = 'Sebastian Bank <sebastian.bank@uni-leipzig.de>'
 __license__ = 'CC0'
 

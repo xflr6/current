@@ -5,7 +5,7 @@ from setuptools import setup
 
 setup(
     name='current',
-    version='0.3.5',
+    version='0.3.6.dev0',
     author='Sebastian Bank',
     author_email='sebastian.bank@uni-leipzig.de',
     description='Current module relative paths and imports',
