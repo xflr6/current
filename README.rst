@@ -3,6 +3,8 @@ Current
 
 |PyPI version| |License| |Supported Python| |Format|
 
+|Travis| |Codecov|
+
 Get the path of a file relative to the current module. Import a Python module
 relative to the current module. Temporarily change ``sys.path`` for imports.
 Get the path of a file relative to the module of the current caller.
@@ -114,3 +116,9 @@ Version 0.1: First public release.
 .. |Format| image:: https://img.shields.io/pypi/format/current.svg
     :target: https://pypi.org/project/current/
     :alt: Format
+.. |Travis| image:: https://img.shields.io/travis/xflr6/current.svg
+    :target: https://travis-ci.org/xflr6/current
+    :alt: Travis
+.. |Codecov| image:: https://codecov.io/gh/xflr6/current/branch/master/graph/badge.svg
+    :target: https://codecov.io/gh/xflr6/current
+    :alt: Codecov
