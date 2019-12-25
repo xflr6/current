@@ -47,10 +47,11 @@ def test_inserted_path(tmpdir):
 
 
 @pytest.mark.parametrize('func, names, expected_end', [
-    (current.caller_path, ['spam'], ('spam',)),
+    (current.caller_path, ['spam.txt'], ('spam.txt',)),
     (spam.spam.caller_path, None, ('tests',)),
     (spam.eggs.eggs.caller_path, None, ('tests',)),
-    (eval('lambda: (lambda: current.caller_path())()'), None, ('current',)),
+    (eval('lambda **kw: (lambda **kw: current.caller_path(**kw))(**kw)'),
+        ['spam.txt'], ('spam.txt',)),
     (spam.spam.eggs, None, ('tests', 'spam')),
     (spam.eggs.eggs.spam, None, ('tests', 'spam', 'eggs')),
 ])
