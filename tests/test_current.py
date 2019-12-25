@@ -4,9 +4,11 @@ import sys
 
 if sys.version_info.major == 2:
     import pathlib2 as pathlib
-    ModuleNotFoundError = ImportError
 else:
     import pathlib
+
+if sys.version_info < (3, 6):
+    ModuleNotFoundError = ImportError
 
 import pytest
 
