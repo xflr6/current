@@ -1,6 +1,13 @@
 # test_current.py
 
-import os
+import sys
+
+if sys.version_info.major == 2:
+    import pathlib2 as pathlib
+else:
+    import pathlib
+
+import pytest
 
 import current
 
@@ -8,26 +15,30 @@ import spam.spam
 import spam.eggs.eggs
 
 
-def test_current_from_test():
-    assert os.path.split(current.current_path())[-1] == 'tests'
+@pytest.mark.parametrize('module, names, expected_end', [
+    (current, [], ('tests',)),
+    (current, ['spam.txt'], ('tests', 'spam.txt')),
+    (current, ['spam', 'eggs'], ('tests', 'spam', 'eggs')),
+    (spam.spam, [], ('tests', 'spam')),
+    (spam.eggs.eggs, [], ('tests', 'spam', 'eggs')),
+])
+def test_current_path(module, names, expected_end):
+    func = getattr(module, 'current_path')
+    result = func(*names)
+    path = pathlib.Path(result)
+    assert path.parts[-len(expected_end):] == expected_end
 
 
-def test_current_from_spam():
-    assert os.path.split(spam.spam.current_path())[-1] == 'spam'
-
-
-def test_current_from_eggs():
-    assert os.path.split(spam.eggs.eggs.current_path())[-1] == 'eggs'
-
-
-def test_caller_path_from_test():
-    assert os.path.split(spam.spam.caller_path())[-1] == 'tests'
-    assert os.path.split(spam.eggs.eggs.caller_path())[-1] == 'tests'
-
-
-def test_caller_path_from_spam():
-    assert os.path.split(spam.spam.eggs())[-1] == 'spam'
-
-
-def test_caller_path_from_eggs():
-    assert os.path.split(spam.eggs.eggs.spam())[-1] == 'eggs'
+@pytest.mark.parametrize('func, names, expected_end', [
+    (current.caller_path, ['spam'], ('spam',)),
+    (spam.spam.caller_path, None, ('tests',)),
+    (spam.eggs.eggs.caller_path, None, ('tests',)),
+    (eval('lambda: (lambda: current.caller_path())()'), None, ('current',)),
+    (spam.spam.eggs, None, ('tests', 'spam')),
+    (spam.eggs.eggs.spam, None, ('tests', 'spam', 'eggs')),
+])
+def test_caller_path(func, names, expected_end):
+    kwargs = {'names': names} if names is not None else {}
+    result = func(**kwargs)
+    path = pathlib.Path(result)
+    assert path.parts[-len(expected_end):] == expected_end
