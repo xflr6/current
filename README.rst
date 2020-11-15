@@ -76,7 +76,7 @@ License
 Changelog
 ---------
 
-Version 0.3.7 (in development): Drop Python 3.5 support.
+Version 0.3.7 (in development): Drop Python 3.5 support and tag Python 3.9 support.
 
 Version 0.3.6: Tag Python 3.8 support. Extend test coverage.
 
