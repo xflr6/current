@@ -1,8 +1,8 @@
 # current.py - change sys.path for imports relative to the current module
 
+import contextlib
 import os
 import sys
-import contextlib
 
 __all__ = ['current_path', 'inserted_path', 'caller_path']
 
