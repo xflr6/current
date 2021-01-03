@@ -1,14 +1,6 @@
 # test_current.py
 
-import sys
-
-if sys.version_info.major == 2:
-    import pathlib2 as pathlib
-else:
-    import pathlib
-
-if sys.version_info < (3, 6):
-    ModuleNotFoundError = ImportError
+import pathlib
 
 import pytest
 
@@ -34,7 +26,7 @@ def test_current_path(module, names, expected_end):
 
 def test_inserted_path(tmpdir):
     modpath = tmpdir / 'module.py'
-    modpath.write_text(u'answer = lambda: 42', encoding='ascii', ensure=True)
+    modpath.write_text('answer = lambda: 42', encoding='ascii', ensure=True)
     with (tmpdir / 'subdir').mkdir().as_cwd():
         with pytest.raises(ModuleNotFoundError, match=r'No module named'):
             import module
