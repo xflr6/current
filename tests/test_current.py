@@ -1,6 +1,7 @@
 # test_current.py
 
 import pathlib
+import sys
 
 import pytest
 
