@@ -5,7 +5,7 @@ from setuptools import setup
 
 setup(
     name='current',
-    version='0.3.7.dev0',
+    version='0.4.dev0',
     author='Sebastian Bank',
     author_email='sebastian.bank@uni-leipzig.de',
     description='Current module relative paths and imports',
@@ -19,7 +19,7 @@ setup(
     },
     py_modules=['current'],
     platforms='any',
-    python_requires='>=2.7,!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*,!=3.5.*',
+    python_requires='>=3.6',
     extras_require={
         'dev': ['tox>=3', 'flake8', 'pep8-naming', 'wheel', 'twine'],
         'test': ['pytest>=4', 'pytest-cov', 'pathlib2; python_version < "3"'],
@@ -30,8 +30,6 @@ setup(
         'Intended Audience :: Developers',
         'License :: CC0 1.0 Universal (CC0 1.0) Public Domain Dedication',
         'Operating System :: OS Independent',
-        'Programming Language :: Python :: 2',
-        'Programming Language :: Python :: 2.7',
         'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.6',
         'Programming Language :: Python :: 3.7',
