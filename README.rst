@@ -70,7 +70,7 @@ enabling the ``FullFrames`` option of the interpreter.
 License
 -------
 
-`CC0 1.0 Public Domain Dedication`_
+`CC0 1.0 Universal`_
 
 
 Changelog
@@ -104,7 +104,7 @@ Version 0.1: First public release.
 .. _see: https://docs.python.org/2/library/sys.html#sys._getframe
 .. _docs: https://docs.python.org/2/library/inspect.html#inspect.currentframe
 
-.. _CC0 1.0 Public Domain Dedication: https://creativecommons.org/publicdomain/zero/1.0/
+.. _CC0 1.0 Universal: https://creativecommons.org/publicdomain/zero/1.0/
 
 .. |PyPI version| image:: https://img.shields.io/pypi/v/current.svg
     :target: https://pypi.org/project/current/
