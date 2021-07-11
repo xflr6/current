@@ -14,7 +14,7 @@ setup(
     url='https://github.com/xflr6/current',
     project_urls={
         'Issue Tracker': 'https://github.com/xflr6/current/issues',
-        'CI': 'https://travis-ci.org/xflr6/current',
+        'CI': 'https://github.com/xflr6/current/actions',
         'Coverage': 'https://codecov.io/gh/xflr6/current',
     },
     py_modules=['current'],
