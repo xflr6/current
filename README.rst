@@ -119,7 +119,7 @@ Version 0.1: First public release.
     :target: https://pypi.org/project/current/
     :alt: Format
 
-.. |Build| image:: https://github.com/xflr6/current/actions/workflows/build.yaml/badge.svg
+.. |Build| image:: https://github.com/xflr6/current/actions/workflows/build.yaml/badge.svg?branch=master
     :target: https://github.com/xflr6/current/actions/workflows/build.yaml?query=branch%3Amaster
     :alt: Build
 .. |Codecov| image:: https://codecov.io/gh/xflr6/current/branch/master/graph/badge.svg
