@@ -1,7 +1,7 @@
 Current
 =======
 
-|PyPI version| |License| |Supported Python| |Format|
+|PyPI version| |License| |Supported Python| |Wheel|
 
 |Build| |Codecov|
 
