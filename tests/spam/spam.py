@@ -1,5 +1,3 @@
-# spam.py
-
 import current
 
 

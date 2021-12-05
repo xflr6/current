@@ -1,5 +1,3 @@
-# eggs.py
-
 import current
 
 

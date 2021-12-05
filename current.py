@@ -1,4 +1,4 @@
-# current.py - change sys.path for imports relative to the current module
+"""Temporarily change sys.path for imports relative to the current module."""
 
 import contextlib
 import os
@@ -30,7 +30,7 @@ def current_path(*names):
 
 
 @contextlib.contextmanager
-def inserted_path(directory=os.pardir, index=1):
+def inserted_path(directory=os.pardir, index: int = 1):
     """Temporarily insert directory (os.pardir) to sys.path at index (1)."""
     depth = 1 if __name__ == '__main__' else 2
 
