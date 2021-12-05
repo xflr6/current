@@ -110,14 +110,14 @@ Version 0.1: First public release.
     :target: https://pypi.org/project/current/
     :alt: Latest PyPI Version
 .. |License| image:: https://img.shields.io/pypi/l/current.svg
-    :target: https://pypi.org/project/current/
+    :target: https://github.com/xflr6/current/blob/master/LICENSE.txt
     :alt: License
 .. |Supported Python| image:: https://img.shields.io/pypi/pyversions/current.svg
     :target: https://pypi.org/project/current/
     :alt: Supported Python Versions
-.. |Format| image:: https://img.shields.io/pypi/format/current.svg
-    :target: https://pypi.org/project/current/
-    :alt: Format
+.. |Wheel| image:: https://img.shields.io/pypi/wheel/current.svg
+    :target: https://pypi.org/project/current/#files
+    :alt: Wheel format
 
 .. |Build| image:: https://github.com/xflr6/current/actions/workflows/build.yaml/badge.svg?branch=master
     :target: https://github.com/xflr6/current/actions/workflows/build.yaml?query=branch%3Amaster
