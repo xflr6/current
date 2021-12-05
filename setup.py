@@ -3,7 +3,7 @@ from setuptools import setup
 
 setup(
     name='current',
-    version='0.4',
+    version='0.4.1.dev0',
     author='Sebastian Bank',
     author_email='sebastian.bank@uni-leipzig.de',
     description='Current module relative paths and imports',

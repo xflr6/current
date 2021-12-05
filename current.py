@@ -7,7 +7,7 @@ import sys
 __all__ = ['current_path', 'inserted_path', 'caller_path']
 
 __title__ = 'current'
-__version__ = '0.4'
+__version__ = '0.4.1.dev0'
 __author__ = 'Sebastian Bank <sebastian.bank@uni-leipzig.de>'
 __license__ = 'CC0, see LICENSE.TXT'
 
