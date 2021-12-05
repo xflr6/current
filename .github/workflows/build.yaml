@@ -42,7 +42,7 @@ jobs:
           python -m pip install --upgrade pip setuptools wheel
           echo ::endgroup::
           echo ::group::Run pip install .[test] codecov
-          pip install .[test] codecov flake8
+          pip install .[test] codecov
           echo ::endgroup::
       - name: Run tests
         run: python run-tests.py
