@@ -20,7 +20,7 @@ setup(
     python_requires='>=3.7',
     extras_require={
         'dev': ['tox>=3', 'flake8', 'pep8-naming', 'wheel', 'twine'],
-        'test': ['pytest>=6', 'pytest-cov'],
+        'test': ['pytest>=7', 'pytest-cov'],
     },
     long_description=pathlib.Path('README.rst').read_text(encoding='utf-8'),
     classifiers=[
