@@ -76,7 +76,7 @@ License
 Changelog
 ---------
 
-Version 0.4.2 (in development): 
+Version 0.4.2 (in development): Tag Python 3.11 support.
 
 Version 0.4.1: Drop Python 3.6 support.
 
