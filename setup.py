@@ -19,8 +19,8 @@ setup(
     platforms='any',
     python_requires='>=3.9',
     extras_require={
-        'dev': ['tox>=3', 'flake8', 'pep8-naming', 'wheel', 'twine'],
-        'test': ['pytest>=7', 'pytest-cov'],
+        'dev': ['tox>=4', 'flake8', 'pep8-naming', 'wheel', 'twine'],
+        'test': ['pytest>=8', 'pytest-cov'],
     },
     long_description=pathlib.Path('README.rst').read_text(encoding='utf-8'),
     long_description_content_type='text/x-rst',
