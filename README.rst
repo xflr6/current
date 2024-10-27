@@ -22,7 +22,7 @@ Links
 Installation
 ------------
 
-This package runs under Python 3.8+, use pip_ to install:
+This package runs under Python 3.9+, use pip_ to install:
 
 .. code:: bash
 
@@ -76,7 +76,7 @@ License
 Changelog
 ---------
 
-Version 0.4.2 (in development): Drop Python 3.7 support; tag Python 3.11 support.
+Version 0.4.2 (in development): Drop Python 3.7 and 3.8 support; tag Python 3.11, 3.12, and 3.13 support.
 
 Version 0.4.1: Drop Python 3.6 support.
 

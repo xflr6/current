@@ -17,7 +17,7 @@ setup(
     },
     py_modules=['current'],
     platforms='any',
-    python_requires='>=3.8',
+    python_requires='>=3.9',
     extras_require={
         'dev': ['tox>=3', 'flake8', 'pep8-naming', 'wheel', 'twine'],
         'test': ['pytest>=7', 'pytest-cov'],
@@ -30,9 +30,10 @@ setup(
         'License :: CC0 1.0 Universal (CC0 1.0) Public Domain Dedication',
         'Operating System :: OS Independent',
         'Programming Language :: Python :: 3',
-        'Programming Language :: Python :: 3.8',
         'Programming Language :: Python :: 3.9',
         'Programming Language :: Python :: 3.10',
         'Programming Language :: Python :: 3.11',
+        'Programming Language :: Python :: 3.12',
+        'Programming Language :: Python :: 3.13',
     ],
 )
