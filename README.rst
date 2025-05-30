@@ -1,7 +1,7 @@
 Current
 =======
 
-|PyPI version| |License| |Supported Python| |Wheel|
+|PyPI version| |License| |Supported Python| |Downloads|
 
 |Build| |Codecov|
 
@@ -119,9 +119,9 @@ Version 0.1: First public release.
 .. |Supported Python| image:: https://img.shields.io/pypi/pyversions/current.svg
     :target: https://pypi.org/project/current/
     :alt: Supported Python Versions
-.. |Wheel| image:: https://img.shields.io/pypi/wheel/current.svg
-    :target: https://pypi.org/project/current/#files
-    :alt: Wheel format
+.. |Downloads| image:: https://img.shields.io/pypi/dm/current.svg
+    :target: https://pypistats.org/packages/current
+    :alt: Monthly downloads
 
 .. |Build| image:: https://github.com/xflr6/current/actions/workflows/build.yaml/badge.svg?branch=master
     :target: https://github.com/xflr6/current/actions/workflows/build.yaml?query=branch%3Amaster
