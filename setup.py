@@ -8,7 +8,7 @@ setup(
     author_email='sebastian.bank@uni-leipzig.de',
     description='Current module relative paths and imports',
     keywords='sys.path import temporary inspect caller',
-    license='CC0',
+    license='CC0-1.0',
     url='https://github.com/xflr6/current',
     project_urls={
         'Issue Tracker': 'https://github.com/xflr6/current/issues',
@@ -27,7 +27,6 @@ setup(
     classifiers=[
         'Development Status :: 4 - Beta',
         'Intended Audience :: Developers',
-        'License :: CC0 1.0 Universal (CC0 1.0) Public Domain Dedication',
         'Operating System :: OS Independent',
         'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.9',
