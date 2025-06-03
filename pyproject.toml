@@ -1,0 +1,75 @@
+[project]
+name = "current"
+authors = [{ name = "Sebastian Bank", email = "sebastian.bank@uni-leipzig.de" }]
+description = "Current module relative paths and imports"
+keywords = ["sys.path", "import", "temporary", "inspect", "caller"]
+readme = "README.rst"
+license = "CC0-1.0"
+license-files = ["LICENSE.txt"]
+dynamic = ["version"]
+requires-python = ">=3.9"
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Developers",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+]
+
+[project.urls]
+Homepage = "https://github.com/xflr6/current"
+"Issue Tracker" = "https://github.com/xflr6/current/issues"
+CI = "https://github.com/xflr6/current/actions"
+Coverage = "https://codecov.io/gh/xflr6/current"
+
+[project.optional-dependencies]
+dev = ["build", "wheel", "twine", "flake8", "Flake8-pyproject", "pep8-naming", "tox>=4"]
+test = ["pytest>=8", "pytest-cov", "coverage"]
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+py-modules = ["current"]
+platforms = ["any"]
+
+[tool.setuptools.dynamic]
+version = { attr = "current.__version__" }
+
+[tool.flake8]
+exclude = [".tox"]
+ignore = ["E126", "E128"]
+max-line-length = 100
+
+[tool.pytest.ini_options]
+minversion = "6"
+testpaths = ["tests"]
+addopts = [
+  "--doctest-modules",
+  "--doctest-glob='*.rst'",
+  "--cov", "--cov-report=term", "--cov-report=html",
+  "--strict-config", "--strict-markers",
+]
+log_cli_level = "WARNING"
+log_file = "test-log.txt"
+log_file_level = "DEBUG"
+
+[tool.coverage.run]
+source = ["current"]
+branch = false
+
+[tool.tox]
+legacy_tox_ini = """
+  [tox]
+  envlist = py{313,312,311,310,39}
+  skip_missing_interpreters = true
+
+  [testenv]
+  extras = test
+  commands = python -X dev run-tests.py {posargs}
+"""
