@@ -41,6 +41,10 @@ platforms = ["any"]
 [tool.setuptools.dynamic]
 version = { attr = "current.__version__" }
 
+[tool.mypy]
+packages = ["current"]
+strict = true
+
 [tool.flake8]
 exclude = [".tox"]
 ignore = ["E126", "E128"]
