@@ -76,6 +76,8 @@ License
 Changelog
 ---------
 
+Version 0.5.1 (in development): 
+
 Version 0.5: Drop Python 3.7, 3.8, and 3.9 support; tag Python 3.11, 3.12, 3.13, and 3.14 support. Switch to pyproject.toml and mark package as py.typed (PEP 561 compliant).
 
 Version 0.4.1: Drop Python 3.6 support.
