@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# flake8: noqa
 
 """Run the tests with https://pytest.org."""
 
@@ -10,14 +11,15 @@ import pytest
 
 SELF = pathlib.Path(__file__)
 
-ARGS = [#'--verbose',
+ARGS = [#'--collect-only',
+        #'--verbose',
         #'--pdb',
         #'--exitfirst',  # a.k.a. -x
         #'-W', 'error',
        ]
 
 if platform.system() == 'Windows' and 'idlelib' in sys.modules:
-    ARGS += ['--capture=sys', '--color=no']
+    ARGS += ['-p', 'no:faulthandler']
 
 
 print('run', [SELF.name] + sys.argv[1:])
