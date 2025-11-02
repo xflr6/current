@@ -33,7 +33,7 @@ def test_inserted_path(tmpdir):
             import module
 
         with current.inserted_path(str(modpath.dirname)):
-            import module
+            import module  # noqa: F811
             assert module.answer() == 42
 
         del sys.modules['module']
