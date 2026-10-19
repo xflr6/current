@@ -22,7 +22,7 @@ Links
 Installation
 ------------
 
-This package runs under Python 3.10+, use pip_ to install:
+This package runs under Python 3.11+, use pip_ to install:
 
 .. code:: bash
 
@@ -76,7 +76,7 @@ License
 Changelog
 ---------
 
-Version 0.5.1 (in development): 
+Version 0.5.1 (in development): Drop Python 3.10 support; tag Python 3.15 support.
 
 Version 0.5: Drop Python 3.7, 3.8, and 3.9 support; tag Python 3.11, 3.12, 3.13, and 3.14 support. Switch to pyproject.toml and mark package as py.typed (PEP 561 compliant).
 
